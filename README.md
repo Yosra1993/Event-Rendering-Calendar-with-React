@@ -11,61 +11,27 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Event Rendering Calendar
 
-### `npm test`
+This project addresses the challenge of rendering events on a calendar while avoiding visual overlap. The solution ensures that:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Overlapping Events**: All events that overlap have the same width.
+2. **Maximum Width Utilization**: Each event uses the maximum width available, complying with the first constraint.
 
-### `npm run build`
+### Details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Functionality**: Events are displayed in a responsive container, using `div` elements that span the full width of the window. The vertical position and height of events are determined by their start time and duration.
+- **Input Format**: Events are provided as an array with each event containing an `id`, `start` time, and `duration` in minutes.
+- **Output**: Events are rendered with a background color and border, and their `id` is displayed. The calendar view ranges from 09:00 am to 09:00 pm.
+- **Dependencies**: The project can be implemented using React, vanilla JavaScript, or a lightweight templating library. Optional libraries like lodash may be used.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Evaluation Criteria
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Correctness of the algorithm
+- Code readability (structure, naming, comments)
+- Responsiveness to window resizing
 
-### `npm run eject`
+### Visual Representation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The calendar visualizes events ensuring correct width allocation and adherence to constraints. Examples are provided to illustrate valid configurations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# frontend_senior
